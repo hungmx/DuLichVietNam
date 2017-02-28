@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height220"
+        android:fitsSystemWindows="true"
+         />
+    <LinearLayout
+        android:id="@+id/viewCountDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height32"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/pager_introduction"
+        ></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/yeu_thich"
+            android:button="@drawable/check_favorite"
+            android:gravity="center"
+            android:textSize="@dimen/text_size20"
+            android:id="@+id/chkFavorite"
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginBottom="@dimen/margin4"/>
+
+        <TextView
+            android:id="@+id/tvWeather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/ic_cloud"
+            android:text="@string/thoi_tiet"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_size20"
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginBottom="@dimen/margin4"/>
+
+        <TextView
+            android:id="@+id/tvMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_diadanh"
+            android:gravity="center"
+            android:text="@string/map"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size20"
+            android:layout_marginTop="@dimen/margin4"
+            android:layout_marginBottom="@dimen/margin4"
+           />
+
+    </LinearLayout>
+
+  <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/margin12"
+              android:src="@drawable/icon_introduce"/>
+
+          <TextView
+              android:id="@+id/tvGioiThieu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/gioi_thieu"
+              android:textColor="#000"
+              android:layout_margin="@dimen/margin10"
+              android:textSize="@dimen/text_size22"/>
+
+      </TableRow>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="12dp"
+              android:src="@drawable/ic_diemdi"/>
+
+          <TextView
+              android:id="@+id/tvDiemDi"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:text="@string/diem_di"
+              android:textColor="#000"
+              android:layout_margin="10dp"
+
+              android:textSize="@dimen/text_size22"/>
+      </TableRow>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="12dp"
+              android:src="@drawable/ic_restaurant"/>
+
+          <TextView
+              android:id="@+id/tvAnUong"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/an_uong"
+              android:textColor="#000"
+              android:layout_margin="10dp"
+
+              android:textSize="@dimen/text_size22"/>
+      </TableRow>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="12dp"
+              android:src="@drawable/ic_motobike"/>
+
+          <TextView
+              android:id="@+id/tvPhuongTien"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/phuong_tien"
+              android:textColor="#000"
+              android:layout_margin="10dp"
+
+              android:textSize="@dimen/text_size22"/>
+      </TableRow>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="12dp"
+
+              android:src="@drawable/ic_home"/>
+
+          <TextView
+              android:id="@+id/tvNhaNghi"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/nha_nghi"
+              android:textColor="#000"
+              android:layout_margin="10dp"
+
+              android:textSize="@dimen/text_size22"/>
+      </TableRow>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray" />
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="12dp"
+              android:src="@drawable/ic_calendar"/>
+
+          <TextView
+              android:id="@+id/tvLichTrinh"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_span="1"
+              android:text="@string/lich_trinh"
+              android:textColor="#000"
+              android:layout_margin="10dp"
+
+              android:textSize="@dimen/text_size22"/>
+      </TableRow>
+  </TableLayout>
+</LinearLayout>
